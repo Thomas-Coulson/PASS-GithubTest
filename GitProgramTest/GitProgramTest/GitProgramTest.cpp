@@ -12,6 +12,15 @@ int Multiply(const int x, const int y) {
     return x * y;
 }
 
+int Divide(const int x, const int y) {
+    if (y != 0) {
+        return x / y;
+    }
+    else {
+        return 0;
+    }
+}
+
 
 int main()
 {
@@ -48,6 +57,12 @@ int main()
         printf("%i * %i = %i", x, y, Multiply(x, y));
         break;
     case 3:
+        std::cout << "You chose 2" << std::endl;
+        std::cout << "Enter the first number: ";
+        std::cin >> x;
+        std::cout << "Enter the second number: ";
+        std::cin >> y;
+        printf("%i / %i = %i", x, y, Divide(x, y));
         break;
     default:
         std::cout << "This choice has not been implemented!" << std::endl;
