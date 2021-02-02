@@ -4,6 +4,10 @@ int Add(const int x, const int y) {
     return x + y;
 }
 
+int Sub(const int x, const int y) {
+    return x - y;
+}
+
 
 int main()
 {
@@ -25,12 +29,27 @@ int main()
         break;
     case 1:
         std::cout << "You chose 1" << std::endl;
+        std::cout << "Enter the first number: ";
+        std::cin >> x;
+        std::cout << "Enter the second number: ";
+        std::cin >> y;
+        printf("%i - %i = %i", x, y, Sub(x, y));
         break;
     case 2:
         std::cout << "You chose 2" << std::endl;
+        std::cout << "Enter the first number: ";
+        std::cin >> x;
+        std::cout << "Enter the second number: ";
+        std::cin >> y;
+        printf("%i + %i = %i", x, y, Add(x, y));
         break;
     case 3:
         std::cout << "You chose 3" << std::endl;
+        std::cout << "Enter the first number: ";
+        std::cin >> x;
+        std::cout << "Enter the second number: ";
+        std::cin >> y;
+        printf("%i + %i = %i", x, y, Add(x, y));
         break;
     default:
         std::cout << "This choice has not been implemented!" << std::endl;
