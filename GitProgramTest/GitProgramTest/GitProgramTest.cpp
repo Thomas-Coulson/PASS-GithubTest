@@ -8,6 +8,10 @@ int Sub(const int x, const int y) {
     return x - y;
 }
 
+int Multiply(const int x, const int y) {
+    return x * y;
+}
+
 
 int main()
 {
@@ -41,15 +45,9 @@ int main()
         std::cin >> x;
         std::cout << "Enter the second number: ";
         std::cin >> y;
-        printf("%i + %i = %i", x, y, Add(x, y));
+        printf("%i * %i = %i", x, y, Multiply(x, y));
         break;
     case 3:
-        std::cout << "You chose 3" << std::endl;
-        std::cout << "Enter the first number: ";
-        std::cin >> x;
-        std::cout << "Enter the second number: ";
-        std::cin >> y;
-        printf("%i + %i = %i", x, y, Add(x, y));
         break;
     default:
         std::cout << "This choice has not been implemented!" << std::endl;
